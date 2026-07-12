@@ -1,6 +1,6 @@
 ---
 name: reverse-motivation-paper-reading
-description: Reconstruct machine-learning and time-series papers from motivation rather than section-by-section summary. Use when reading an attached paper, PDF, preprint, or method description to explain why each component was introduced, which failure it repairs, what assumptions it relies on, and how the final method forms as a problem–baseline–failure–repair chain.
+description: Reconstruct machine-learning and time-series papers from motivation rather than section-by-section summary. Use when reading an attached paper, PDF, preprint, or method description to explain why each component was introduced, which failure it repairs, and what assumptions and limitations it relies on.
 ---
 
 # Reverse Motivation Paper Reading
@@ -31,22 +31,10 @@ Explain the added component as a patch: input signal, operation, changed gradien
 
 For every repair, identify its remaining dependency or new risk: estimator bias, instability, compute cost, underfitting, leakage, or sensitivity. Explain later modules only as responses to those residual problems. Keep independent mechanisms separate.
 
-### 6. Reconstruct the final chain
-
-Use the compact form:
-
-```text
-original problem → minimal solution → failure A → repair A
-→ residual failure B → repair B → final framework
-```
-
-For each link, label the evidence level: explicit claim in the paper, experimentally supported observation, or interpretation/inference.
-
 ## Required output
 
 Lead with a short intuitive narrative, then provide:
 
-- the problem–failure–repair chain;
 - a mechanism table with component, input signal, operation, repaired failure, and unresolved risk;
 - the final objective or information flow when equations are necessary;
 - ablation evidence showing which repair contributes what;
