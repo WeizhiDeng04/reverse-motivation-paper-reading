@@ -1,0 +1,6 @@
+interface:
+  display_name: Motivation-First Paper Reading
+  short_description: Explain papers through motivation, failures, and repairs
+  default_prompt: Use the motivation-first workflow to explain why each component
+    was introduced, which failure it repairs, and what assumptions and limitations remain.
+
