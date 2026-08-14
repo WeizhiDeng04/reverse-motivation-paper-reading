@@ -1,6 +1,6 @@
 # reverse-motivation-paper-reading
 
-A reusable paper-reading skill for reconstructing how a research method forms from its motivation.
+A reusable reading skill for papers, used to reconstruct how research methods are formed from their motivations, but currently only applicable to algorithmic papers, and does not have good applicability for empirical, social science, and operations research papers.
 
 Instead of summarizing a paper section by section, this skill explains the method as a causal chain:
 
