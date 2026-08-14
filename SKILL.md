@@ -13,9 +13,9 @@ Use a causal reading order: identify the original training or modeling problem, 
 
 ### 1. Establish the target and hidden assumption
 
-Extract the task objective, undesirable behavior, and assumption that makes the standard baseline appear sufficient. State the unit of difficulty precisely: sample, time step, channel, label, optimization stage, or distribution shift.
+Extract the task objective, undesirable behavior, and assumption that makes the standard baseline appear sufficient. Take the papers on time series prediction tasks as an example, precisely stating the difficult measurement units: samples, time steps, channels, labels, optimization stages or distribution shifts.
 
-### 2. Derive the minimal baseline
+### 2. Derive the minimal baseline / MVP
 
 Construct the most natural intervention before reading the full architecture. Describe what it changes in the objective, information flow, or data selection, and what behavior it is intended to induce.
 
@@ -45,3 +45,8 @@ Use concrete language such as “loss becomes an unreliable predictability proxy
 ## Quality checks
 
 Before finalizing, verify that every module answers “which failure forced its introduction?”, that the explanation does not turn stage-wise recomputation into sample-level memory, and that mutual-model mechanisms are described according to the direction and timing of information flow. Separate the paper's demonstrated result from any proposed adaptation to the user's application.
+
+## Supplementary Requirements Explanation
+
+- Think about each point carefully, that is, why this method is chosen and not others (do not blindly praise, view it dialectically, because there are some points that actually have problems). This point is used to help readers discover the limitations or areas for improvement in the paper, or to correct some unnecessary improvement ideas that readers may have.
+- All analyses are based on your complete reading of the PDF paper. Do not write in Markdown if you haven't finished reading it. In Markdown, there must be a mapping to the original text, such as formula numbers or subheadings. This is used to help readers establish the connection between Markdown and the original paper text.
